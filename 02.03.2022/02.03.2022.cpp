@@ -1,11 +1,10 @@
-﻿#include <iostream>
-#include "Figures.h"
+﻿#include "Figures.h"
 
 
 
 int main()
 {
-    Vector a{2,5};
+    Vector a{2,5,10};
     a.umn(2);
     a.print();
     Circle b{3,3,3};

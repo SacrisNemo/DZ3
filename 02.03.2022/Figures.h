@@ -9,6 +9,18 @@ struct Vector
 	double x;
 	double y;
 	double z;
+	Vector()
+	{
+		this->x = 0;
+		this->y = 0;
+		this->z = 0;
+	};
+	Vector(int x, int y, int z)
+	{
+		this->x = x;
+		this->y = y;
+		this->z = z;
+	};
 	double modul();
 	Vector sum(Vector);
 	Vector razn(Vector);
@@ -16,6 +28,10 @@ struct Vector
 	Vector vect(Vector);
 	void umn(double);
 	void print();
+	~Vector()
+	{
+
+	};
 };
 
 struct Circle
@@ -23,9 +39,25 @@ struct Circle
 	int radius;
 	int x;
 	int y;
+	Circle()
+	{
+		x = 0;
+		y = 0;
+		radius = 0;
+	};
+	Circle(int x, int y, int radius)
+	{
+		this->x = x;
+		this->y = y;
+		this->radius = radius;
+	};
 	int length();
 	int square();
 	void print();
+	~Circle()
+	{
+
+	};
 };
 #endif // !FIGURES_H
 
