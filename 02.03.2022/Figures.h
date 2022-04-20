@@ -21,6 +21,12 @@ struct Vector
 		this->y = y;
 		this->z = z;
 	};
+	Vector(const Vector& other)
+	{
+		this->x = other.x;
+		this->y = other.y;
+		this->z = other.z;
+	};
 	double modul();
 	Vector sum(Vector);
 	Vector razn(Vector);
@@ -50,6 +56,12 @@ struct Circle
 		this->x = x;
 		this->y = y;
 		this->radius = radius;
+	};
+	Circle(const Circle& other)
+	{
+		this->x = other.x;
+		this->y = other.y;
+		this->radius = other.radius;
 	};
 	int length();
 	int square();
